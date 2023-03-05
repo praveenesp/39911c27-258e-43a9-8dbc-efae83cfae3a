@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#head {
+    color: white;
+    font-weight: 500;
+}
+
+body {
+    min-height: 100vh;
+    background-color:lightgray ;
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    background-color: aqua;
+    min-height: 15vh;
+}
+
+header {
+    display: flex;
+    min-height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    background-color: white;
+    font-size: 33px;
+    margin-left: 100px;
+    margin-right: 20px;
+    padding: .3em;
+    border-radius: 9px;
+}
+
+.nav {
+    background-color: rgb(238, 206, 206);
+    width: 700px;
+    margin-right: 300px;
+    border-radius: 40px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style: none;
+    font-size: 32px;
+    padding: 28px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+
+    background-color: whitesmoke;
+    border-radius: 13px;
+
+    padding: 8px;
+
+}
+
+ul li a:hover {
+    background-color: black;
+    color: white;
+}
+.new{
+    padding-top: 60px;
+    background-color:lightskyblue;
+    border-radius: 15px;
+    width: 900px;
+    height:250px;
+    margin-top: 350px;
+}
+
+.main div {
+    width: 500px;
+    height: 400px;
+    background-color: lightgray;
+    margin: 20px;
+    padding: 60px;
+}
+
+#both {
+    height: 100px;
+    width: 100px;
+}
+
+
+.aboutmatter {
+    background-color: skyblue;
+    padding: 20px;
+}
+
+.p1 {
+    background-color: white;
+    width: 70vw;
+}
+
+.p2 {
+    background-color: lightpink;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.img7 {
+    width: 250px;
+    margin: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.img5 {
+    width: 220px;
+
+    margin: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.nav1 {
+    color: black;
+}
+
+.nav2 {
+    color: black;
+}
+
+.nav3 {
+    color: black;
+}
+
+.dis1 {
+    height: 50px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+.dis2 {
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    border-width: 0px;
+    margin: 10px;
+}
+
+.dates {
+    width: 130px;
+    border-radius: 6px;
+    border-width: 0px;
+    padding: 10px;
+}
+
+.b1 {
+    width: 80px;
+    text-align: left;
+    padding: 10px;
+}

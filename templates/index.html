@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href="{{ url_for('static',filename='project.css')}}" rel="stylesheet" />
+    <title>CHIBICREW</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" id="head" href="#">CHIBICREW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" id="nav3" href="#">
+                    Home
+                    <span class="sr-only">ABOUT</span>
+                </a>
+                <a class="nav-link" id="nav1" onclick="display('section2')" href="#">PROJECT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+    <form id="contactForm" action="/predict" method="post">
+            <center>
+            
+                <div class="card1 d-flex flex-row">
+                    <img src="https://res.cloudinary.com/dcfzq326i/image/upload/v1677947968/IMG-20230304-WA0029_rnkblq.jpg" class="img7">
+                    <div class="d-flex flex-column justify-content-start" id="both">
+                        <select class="both mr-1 pt-4 dis1" name="method" id="method">
+                            <option value="Adilabad"> Adilabad </option>
+                            <option value="Khammam"> Khammam </option>
+                            <option value="Karimnagar"> Karimnagar </option>
+                            <option value="Nizamabad"> Nizamabad </option>
+                            <option value="Warangal"> Warangal </option>
+                        </select>
+                        <select class="mr-3 pt-4 dis2" name="month" id="month">
+                            <option value="Jan">January</option>
+                            <option value="Feb"> February</option>
+                            <option value="Mar"> March </option>
+                            <option value="Apr"> April </option>
+                            <option value="May"> May </option>
+                            <option value="Jun"> June</option>
+                            <option value="Jul">July</option>
+                            <option value="Aug"> August </option>
+                            <option value="Sep"> September </option>
+                            <option value="Oct"> October </option>
+                            <option value="Nov"> November </option>
+                            <option value="Dec"> December </option>
+                        </select>
+                        <div class="b1">
+                            <button class="btn btn-primary">SUBMIT</button>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card2 d-flex flex-row">
+
+                    <img src="https://res.cloudinary.com/dcfzq326i/image/upload/v1677948639/istockphoto-1256527934-612x612_janp6z.jpg" class="img5 pr-5" />
+                    <div class="d-flex flex-column justify-content-center">
+                        <select class="mr-1 pt-4 pr-5 dis1" name="method2" id="method2">
+                            <option value="Adilabad"> Adilabad </option>
+                            <option value="Khammam"> Khammam </option>
+                            <option value="Karimnagar"> Karimnagar </option>
+                            <option value="Nizamabad"> Nizamabad </option>
+                            <option value="Warangal"> Warangal </option>
+                        </select>
+                        <input type="date" value="date" class="dates" id="date">
+                        <div class="b1">
+                            <button class="btn btn-primary">SUBMIT</button>
+                        </div>
+                </center>
+            </div>
+    </form>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
